@@ -1,0 +1,13 @@
+input {
+  all: unset;
+  width: 100%;
+}
+
+.modal-input-wrapper {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #6C63FF;
+  width: 100%;
+  text-align: start;
+  margin-top: 25px;
+}
