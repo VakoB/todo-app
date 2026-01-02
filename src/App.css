@@ -11,8 +11,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 100vh;
+}
+
+.content-dark {
+  background-color: #252525;
 }
 
 h1 {
@@ -20,6 +25,10 @@ h1 {
   font-style: Medium;
   font-size: 26px;
   margin-top: 40px;
+}
+
+.h1-dark {
+  color: #f7f7f7;
 }
 
 .tools {
@@ -89,9 +98,14 @@ h1 {
 .nothing-here-image {
   align-self: center;
   margin-top: 30px;
+  font-size: 20px;
 }
 
 .nothing-here-text {
   align-self: center;
   margin-top: 20px;
+}
+
+.nothing-here-text-dark {
+  color: #F7F7F7;
 }

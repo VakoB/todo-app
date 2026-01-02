@@ -5,7 +5,7 @@ import deleteIcon from "../../assets/delete-icon.svg";
 import checkIcon from "../../assets/check-icon.svg"
 import { Check, X } from 'lucide-react'
 
-export default function ListItem({ listItem, setItemsList, setFilteredList }) {
+export default function ListItem({ listItem, setItemsList, setFilteredList, darkMode }) {
   const [editItemId, setEditItemId] = useState(null);
   const [editItemInputText, setEditItemInputText] = useState("");
   const [isChecked, setIsChecked] = useState(false);
@@ -58,7 +58,7 @@ export default function ListItem({ listItem, setItemsList, setFilteredList }) {
 
       {editItemId !== listItem.id ? (
         <>
-          <p className={`item-text ${isChecked && "crossed-text"}`}>
+          <p className={`item-text ${isChecked && "crossed-text"} ${darkMode ? 'item-text-dark' : 'item-text-light'}`}>
             {listItem.text}
           </p>
 
@@ -70,18 +70,20 @@ export default function ListItem({ listItem, setItemsList, setFilteredList }) {
       ) : (
         <>
           <input
-            className="item-text"
+            className={`item-text ${darkMode ? 'item-text-dark' : 'item-text-light'}`}
             onChange={(e) => setEditItemInputText(e.target.value)}
             value={editItemInputText}
           />
 
           <div className="list-item-buttons">
             <Check
+              className="check-button"
               onClick={editConfirmHandle}
               size={20}
               color="#CDCDCD"
             />
             <X
+              className="close-button"
               color="#CDCDCD"
               size={20}
               onClick={() => setEditItemId(null)}

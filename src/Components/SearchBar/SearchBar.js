@@ -1,11 +1,12 @@
 import "./SearchBar.css";
 import searchIcon from "../../assets/search-icon.svg";
 
-export default function SearchBar({ value, onChange, setFilteredList, itemsList }) {
+export default function SearchBar({ value, onChange, setFilteredList, itemsList, darkMode }) {
   return (
-    <div className="searchbar-wrapper">
+    <div className={`searchbar-wrapper ${darkMode ? `searchbar-wrapper-dark` : 'searchbar-wrapper-light'}`}>
       <input value={value} onChange={onChange} placeholder="Search note..." />
       <img
+        className={darkMode && 'dark-image'}
         onClick={() => {
           const search = value.trim().toLowerCase();
           if (search === "") {

@@ -11,3 +11,7 @@ input {
   text-align: start;
   margin-top: 25px;
 }
+
+.modal-input-wrapper-dark {
+  border: 1px solid #F7F7F7;
+}

@@ -13,6 +13,12 @@
   width: 100%;
 }
 
+.modal-dark {
+  border: 1px solid #F7F7F7;
+  background-color: #252525;
+  color: #F7F7F7;
+}
+
 .modal-buttons {
   display: flex;
   justify-content: space-between;
@@ -33,6 +39,8 @@
   align-items: center;
   z-index: 10;
 }
+
+
 
 .itemListContainer {
   display: flex;
@@ -62,7 +70,23 @@ h2 {
     color: #6C63FF;
 }
 
+.modal-cancel-button:hover {
+  cursor: pointer;
+}
+
 .modal-apply-button {
     background-color: #6C63FF;
     color: white;
+}
+
+.modal-apply-button:hover {
+  cursor: pointer;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+
+.check-button:hover {
+  cursor: pointer;
 }

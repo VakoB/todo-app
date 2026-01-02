@@ -38,6 +38,14 @@
   margin-left: 17px;
 }
 
+.item-text-dark {
+  color: #F7F7F7;
+}
+
+.item-text-light {
+  color: #252525;
+}
+
 .list-item-container {
   display: flex;
   align-items: center;
@@ -56,5 +64,5 @@
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: line-through;
-  color: #25252580;
+  opacity: 50%;
 }
