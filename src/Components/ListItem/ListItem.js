@@ -77,13 +77,11 @@ export default function ListItem({ listItem, setItemsList, setFilteredList, dark
 
           <div className="list-item-buttons">
             <Check
-              className="check-button"
               onClick={editConfirmHandle}
               size={20}
               color="#CDCDCD"
             />
             <X
-              className="close-button"
               color="#CDCDCD"
               size={20}
               onClick={() => setEditItemId(null)}
